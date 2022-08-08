@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+   
+}
+
+:root{
+    --main_color: #009bac;
+}
+/* === Header Start === */
+header{
+    width: 100%;    
+    padding: 0 20px;
+    display: flex;   
+    align-items: center;
+    justify-content: space-between;
+    
+    
+    
+}
+.logo{
+    width: 60px;
+    border-radius: 50%;
+}
+nav{
+    
+    display: flex;    
+    flex-direction: row;    
+    height: 80px;
+    
+}
+nav li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px; 
+    height: 100%; 
+    transform: skew(-18deg); 
+    transform: skew(-18deg); 
+    transform: skew(-18deg);
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+   
+}
+
+nav li:hover{
+    background-color: #66CC99;
+    color: white;
+    
+}
+nav li a{
+    color: black;
+}
+
+/* === Header Start === */
+/* === Banner Start === */
+.banner_text{
+    background-image: url('/image/banner.jpg');
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+    background-color: rgba(0, 0, 0, 0.381);   
+
+    
+    
+}
+
+.label_banner{
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    padding: 0 0 0 10px;    
+    
+}
+
+.button{
+    height: 40px;
+    width: 120px;
+    background-color: #A4C951;
+    color: white;
+    border-radius: 20px;
+    border: 0;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 0.9em;
+    transition: all 0.3s ease-out;
+}
+
+.button:hover{
+    background-color: #95b34f;
+}
+
+/* === Banner End === */
+
+/* === Experiência do Usuário Start === */
+.user-xp{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 5px;
+    
+}
+
+.scale_33{
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 30px;
+    gap: 10px;
+}
+.scale_33 img{
+        width: 40px;
+}
+
+/* === Experiência do Usuário End === */
+
+/* === About Start === */
+
+.about_{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 15px;
+    background-color: #444A35;
+    color: white;
+    
+
+}
+
+.about_team{
+    padding: 10px;
+}
+.about_team h2{
+    margin-bottom: 10px;
+}
+
+
+.team{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 15px;
+    
+}
+
+
+
+.team img{
+    border-radius: 50%;
+    width: 70px;
+    display: flex;
+    flex-direction: row;
+}
+
+.sobre{
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+}
+
+
+/* === About End === */
+/* === Subscriber Start ===*/
+.subscriber{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #a5c952;
+    color: white;
+    padding: 10px;
+}
+.texto{
+    width: 200px;
+    background-color:azure;
+    border: 0;
+    height:30px;
+    padding: 10px 5px;
+}
+
+
+.env_button{
+    width: 60px;    
+    margin-left: -4px;
+    border: 0;
+    background-color: #98b84f;
+    color: white;
+    cursor: pointer;
+    height: 30px;
+}
+/* === Subscriber End ===*/
+/* === Images_33 Start*/
+.images_33{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+    gap: 15px;
+    
+}
+
+.img_33{
+    width: 33.33%;
+    display: flex;    
+    justify-content: center;    
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.img_33 img{
+   width: 100%;
+    
+       
+    
+}
+
+
+/* === Images_33 End*/
+/*Rodapé*/
+footer{
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+    background-color: #98b84f;
+    color: white;
+}
+
+@media only screen and (max-width: 800px) {
+    .user-xp{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .scale_33{
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .about_{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about_team{
+        padding: 10px 0;
+    }
+    .sobre{
+        padding: 10px 0;
+    }
+    
+    .images_33{
+        flex-direction: column;
+    }
+    .img_33{
+        width: 80%;
+        min-width: 320px;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .subscriber{
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+
+    nav{
+        display: none;
+    }
+}
